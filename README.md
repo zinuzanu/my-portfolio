@@ -1,16 +1,42 @@
-# React + Vite
+# 🧑‍💻 백엔드 개발자 김진우 포트폴리오 (Front-end Viewer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+본 저장소는 백엔드 개발자 **김진우**의 핵심 역량 및 프로젝트 경험을 정리한 포트폴리오의 웹 뷰어 코드입니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 포트폴리오 바로가기 (Live Site)
 
-## React Compiler
+| 구분 | 링크 |
+| :--- | :--- |
+| **🔗 배포 URL** | **[https://zinuzanu.github.io/my-portfolio](https://zinuzanu.github.io/my-portfolio)** |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ 기술 스택 (핵심 및 뷰어)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| 카테고리 | 기술 |
+| :--- | :--- |
+| **Backend Core** | Java 17, Spring Boot, Spring Security, JPA, RESTful API |
+| **Database** | MySQL, PostgreSQL |
+| **DevOps/Infra** | Git, Docker, AWS (EC2/RDS) |
+| **Viewer** | React (Vite) |
+
+---
+
+## 📌 주요 링크
+
+* **GitHub Repository:** [https://github.com/zinuzanu](https://github.com/zinuzanu)
+* **이메일:** jinugim80@gmail.com
+
+---
+
+### 💡 로컬 실행 방법
+
+```bash
+# 1. 저장소 클론
+git clone [https://github.com/zinuzanu/my-portfolio.git](https://github.com/zinuzanu/my-portfolio.git)
+cd my-portfolio
+
+# 2. 설치 및 실행
+npm install
+npm run dev
