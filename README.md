@@ -27,16 +27,3 @@
 
 * **GitHub Repository:** [https://github.com/zinuzanu](https://github.com/zinuzanu)
 * **이메일:** jinugim80@gmail.com
-
----
-
-### 💡 로컬 실행 방법
-
-```bash
-# 1. 저장소 클론
-git clone [https://github.com/zinuzanu/my-portfolio.git](https://github.com/zinuzanu/my-portfolio.git)
-cd my-portfolio
-
-# 2. 설치 및 실행
-npm install
-npm run dev
