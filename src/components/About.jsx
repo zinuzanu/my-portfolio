@@ -6,7 +6,7 @@ function About() {
     <section id="about" className="section">
       <div className="profile-photo-container">
         <img 
-          src="/진우 얼굴.jpg" 
+          src="/profile-photo.jpg" 
           alt="프로필 사진" 
           className="profile-photo" 
         />
