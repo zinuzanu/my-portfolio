@@ -1,0 +1,52 @@
+/* Navbar 스타일 */
+.navbar {
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 너비 전체 */
+    background-color: #333; /* 배경색 */
+    color: white; /* 글자색 */
+    height: 60px; /* 높이 지정 */
+    z-index: 1000; /* 다른 요소들 위에 표시되도록 가장 높은 Z-index 부여 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 900px; /* 콘텐츠 영역과 동일한 너비로 제한 */
+    margin: 0 auto;
+    display: flex; /* Flexbox 사용하여 내부 요소 배치 */
+    justify-content: space-between; /* 로고와 메뉴를 양 끝으로 배치 */
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none; /* 리스트 점 제거 */
+    display: flex; /* 항목들을 가로로 배치 */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* 마우스 오버 시 색상 변경 */
+}
+
+/* 앵커 클릭 시 부드럽게 스크롤되도록 설정 */
+html {
+    scroll-behavior: smooth;
+}

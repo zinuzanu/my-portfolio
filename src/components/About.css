@@ -1,0 +1,164 @@
+/* src/components/About.css */
+
+/* #about 섹션의 중앙 정렬 제거, 기본 좌측 정렬 */
+#about {
+    padding-top: 100px; /* 네비게이션 바 아래 공간 확보 */
+    padding-bottom: 60px;
+}
+
+/* 모든 제목 요소 중앙/좌측 정렬 */
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    /* 이름: 중앙 정렬 유지 */
+    text-align: center; 
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+    /* 직무: 중앙 정렬 유지 */
+    text-align: center; 
+}
+#about h3 {
+    text-align: left; /* 좌측 정렬을 명시적으로 보장 */
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 프로필 사진 컨테이너: 사진만 중앙 정렬 유지 */
+.profile-photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px; /* 중앙 정렬 유지 */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #eee;
+    border: 3px solid #b7e425; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Summary 텍스트 스타일 (좌측 정렬) */
+.summary-text {
+    margin-bottom: 30px; /* 아래 여백만 유지 */
+    line-height: 1.6;
+    color: #666;
+    text-align: left; /* 텍스트를 명시적으로 좌측 정렬 */
+}
+
+/* ---------------------------------------------------- */
+/* 💡 핵심 링크 (.link-list) 스타일 (아이콘 제거 후 최종) */
+/* ---------------------------------------------------- */
+.link-list {
+    list-style: none; /* 기본 리스트 마커 제거 */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.link-list li {
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+}
+
+.link-list a {
+    display: flex; /* 항목 정렬 */
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 5px 10px; /* 좌우 패딩으로 영역 확보 */
+    border-radius: 4px;
+}
+
+.link-list a:hover {
+    color: #ff4500; /* 강조색으로 변경 */
+    background-color: #f7f7f7;
+}
+
+/* ❌ 아이콘(i) 관련 스타일 제거 */
+
+.link-list span {
+    /* 레이블 텍스트 */
+    font-weight: 500;
+    /* 아이콘이 사라진 만큼 왼쪽 정렬을 위해 마진 조정 */
+    margin-right: 20px; 
+}
+
+.link-list .link-url {
+    /* 실제 URL 텍스트 */
+    font-size: 0.9rem;
+    color: #888;
+    flex-grow: 1; /* 나머지 공간 채우기 */
+    text-align: right; /* URL은 우측 정렬 */
+}
+
+/* 인쇄 시 스타일 처리 (index.css의 @media print와 연동) */
+@media print {
+    .link-list a {
+        padding: 0 !important;
+        background-color: white !important;
+        color: #000 !important;
+    }
+    /* ❌ 인쇄 시 아이콘 스타일 제거 */
+    .link-list .link-url {
+        /* index.css에서 a::after로 URL이 추가되므로 웹용 URL은 숨김 */
+        display: none !important; 
+    }
+}
+
+
+/* ================================================= */
+/* 🚀 Education 섹션 유사 구조 (About Item Box) 스타일 적용 */
+/* ================================================= */
+
+.about-item {
+    margin-bottom: 30px; 
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #b7e425; /* About 섹션의 강조색 적용 */
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: left; /* 좌측 정렬 보장 */
+}
+
+.about-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333; 
+    text-align: left;
+}
+
+/* 리스트 스타일 (기술 스택 및 성과 리스트) */
+.achievement-list, .skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.achievement-list li, .skills-list li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+    border-bottom: none; 
+}
+
+/* 리스트 마커 스타일 (작은 점) */
+.achievement-list li::before, .skills-list li::before {
+    content: "•"; 
+    color: #b7e425; /* About 섹션의 강조색 적용 */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

@@ -1,0 +1,77 @@
+/* src/components/Education.css */
+
+#education h2 {
+    /* ❌ text-align: center; 제거 후 좌측 정렬 */
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 15px;
+    text-align: left; /* 💡 좌측 정렬 적용 */
+}
+
+.education-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #007bff; /* 교육 섹션 포인트 색상 유지 */
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #007bff;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+.major, .period {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+.coursework, .achievements {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc; /* 구분선 */
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+.coursework h4, .achievements h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+/* 💡 리스트 마커 통일 (achievement-list와 동일) */
+.achievement-list, .coursework ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+.achievement-list li, .coursework ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    padding-left: 15px;
+    position: relative;
+    text-align: left; /* 좌측 정렬 적용 */
+    /* 기존 .coursework li의 복잡한 SVG 배경 스타일 제거 */
+    background: none; 
+    background-size: auto;
+}
+
+/* 💡 리스트 마커 (CSS ::before) 통일 */
+.achievement-list li::before, .coursework ul li::before {
+    content: "•"; 
+    color: #007bff; /* 교육 섹션 강조색 사용 */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

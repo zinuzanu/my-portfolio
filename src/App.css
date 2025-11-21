@@ -1,0 +1,42 @@
+/* src/App.css */
+
+.main-content {
+    width: 100%;
+    max-width: 900px; /* A4 용지와 비슷한 느낌의 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: white; 
+    min-height: 100vh;
+    padding-top: 60px; /* Navbar 높이만큼 여백 확보 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* 모든 섹션의 기본 스타일 */
+.section {
+    padding: 60px 60px; 
+    border-bottom: 5px solid #f0f0f0;
+    /* 마지막 섹션은 구분선을 제거할 수 있습니다. */
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.print-button {
+    position: fixed; /* 화면에 고정 */
+    top: 70px; /* 네비게이션바 아래로 위치 */
+    right: 30px; 
+    padding: 10px 15px;
+    background-color: #b7e425; /* 강조색 사용 */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.print-button:hover {
+    background-color: #9ecc1e;
+}

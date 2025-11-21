@@ -1,0 +1,101 @@
+/* src/components/Portfolio.css */
+
+#portfolio h2 {
+    /* ❌ text-align: center; 제거 후 좌측 정렬 */
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 15px;
+    text-align: left; /* 💡 좌측 정렬 적용 */
+}
+
+.project-list {
+    /* 웹에서만 grid를 사용하고 인쇄 시에는 1열로 자연스럽게 흐르도록 함 */
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+}
+
+.project-item {
+    /* 💡 Education.css와 스타일을 비슷하게 가져가 인쇄 시 .education-item 스타일을 공유함 */
+    border: 1px solid #ddd;
+    border-left: 5px solid #ff4500; /* 프로젝트만의 강조색 사용 (예: 오렌지) */
+    border-radius: 8px;
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    text-align: left; /* 좌측 정렬 적용 */
+}
+
+/* 마우스 오버 시 효과 (웹에서만 적용) */
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.6rem;
+    color: #ff4500; /* 프로젝트 강조색 적용 */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.period {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.summary-text {
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.tech-stack {
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    text-align: left;
+}
+
+.tech-stack strong {
+    color: #333;
+    margin-right: 10px;
+    /* 💡 Strong 태그가 인쇄 시 block으로 처리되므로, 줄 바꿈 방지 */
+    display: inline; 
+}
+
+.project-links {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* 프로젝트 링크 버튼 (인쇄 시 index.css의 @media print에서 display: none 처리됨) */
+.project-link-button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.project-link-button:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* 💡 About/Education 섹션의 리스트 스타일을 공유하기 위한 클래스 정의 */
+/* .achievements와 .achievement-list는 Education.css와 동일한 스타일을 사용합니다. */
+/* 필요한 경우 Education.css의 해당 리스트 관련 스타일을 복사하여 여기에 붙여넣을 수 있습니다. */
