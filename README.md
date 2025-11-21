@@ -10,18 +10,6 @@
 | :--- | :--- |
 | **🔗 배포 URL** | **[https://zinuzanu.github.io/my-portfolio](https://zinuzanu.github.io/my-portfolio)** |
 
----
-
-## 🛠️ 기술 스택 (핵심 및 뷰어)
-
-| 카테고리 | 기술 |
-| :--- | :--- |
-| **Backend Core** | Java 17, Spring Boot, Spring Security, JPA, RESTful API |
-| **Database** | MySQL, PostgreSQL |
-| **DevOps/Infra** | Git, Docker, AWS (EC2/RDS) |
-| **Viewer** | React (Vite) |
-
----
 
 ## 📌 주요 링크
 
